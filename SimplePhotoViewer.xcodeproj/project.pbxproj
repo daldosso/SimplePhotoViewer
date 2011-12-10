@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E47CC2B1493450D00797691 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E47CC2A1493450D00797691 /* UIKit.framework */; };
+		9E47CC2D1493450D00797691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E47CC2C1493450D00797691 /* Foundation.framework */; };
+		9E47CC2F1493450D00797691 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E47CC2E1493450D00797691 /* CoreGraphics.framework */; };
+		9E47CC351493450D00797691 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E47CC331493450D00797691 /* InfoPlist.strings */; };
+		9E47CC381493450D00797691 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E47CC371493450D00797691 /* main.m */; };
+		9E47CC3B1493450D00797691 /* SimplePhotoViewerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E47CC3A1493450D00797691 /* SimplePhotoViewerAppDelegate.m */; };
+		9E47CC3E1493450E00797691 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E47CC3C1493450E00797691 /* MainWindow.xib */; };
+		9E47CC411493450E00797691 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E47CC401493450E00797691 /* FirstViewController.m */; };
+		9E47CC441493450E00797691 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E47CC431493450E00797691 /* SecondViewController.m */; };
+		9E47CC471493450E00797691 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E47CC451493450E00797691 /* FirstView.xib */; };
+		9E47CC4A1493450E00797691 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E47CC481493450E00797691 /* SecondView.xib */; };
+		9E47CC511493450E00797691 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E47CC2A1493450D00797691 /* UIKit.framework */; };
+		9E47CC521493450E00797691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E47CC2C1493450D00797691 /* Foundation.framework */; };
+		9E47CC531493450E00797691 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E47CC2E1493450D00797691 /* CoreGraphics.framework */; };
+		9E47CC5B1493450F00797691 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E47CC591493450F00797691 /* InfoPlist.strings */; };
+		9E47CC5E1493450F00797691 /* SimplePhotoViewerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9E47CC5D1493450F00797691 /* SimplePhotoViewerTests.h */; };
+		9E47CC601493450F00797691 /* SimplePhotoViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E47CC5F1493450F00797691 /* SimplePhotoViewerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E47CC541493450E00797691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E47CC1D1493450D00797691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E47CC251493450D00797691;
+			remoteInfo = SimplePhotoViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E47CC261493450D00797691 /* SimplePhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E47CC2A1493450D00797691 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E47CC2C1493450D00797691 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E47CC2E1493450D00797691 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E47CC321493450D00797691 /* SimplePhotoViewer-Info.plist */ = {isa = PBXFileReference; path = "SimplePhotoViewer-Info.plist"; sourceTree = "<group>"; };
+		9E47CC341493450D00797691 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E47CC361493450D00797691 /* SimplePhotoViewer-Prefix.pch */ = {isa = PBXFileReference; path = "SimplePhotoViewer-Prefix.pch"; sourceTree = "<group>"; };
+		9E47CC371493450D00797691 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E47CC391493450D00797691 /* SimplePhotoViewerAppDelegate.h */ = {isa = PBXFileReference; path = SimplePhotoViewerAppDelegate.h; sourceTree = "<group>"; };
+		9E47CC3A1493450D00797691 /* SimplePhotoViewerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePhotoViewerAppDelegate.m; sourceTree = "<group>"; };
+		9E47CC3D1493450E00797691 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		9E47CC3F1493450E00797691 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		9E47CC401493450E00797691 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		9E47CC421493450E00797691 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		9E47CC431493450E00797691 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		9E47CC461493450E00797691 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		9E47CC491493450E00797691 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		9E47CC501493450E00797691 /* SimplePhotoViewerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePhotoViewerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E47CC581493450E00797691 /* SimplePhotoViewerTests-Info.plist */ = {isa = PBXFileReference; path = "SimplePhotoViewerTests-Info.plist"; sourceTree = "<group>"; };
+		9E47CC5A1493450F00797691 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E47CC5C1493450F00797691 /* SimplePhotoViewerTests-Prefix.pch */ = {isa = PBXFileReference; path = "SimplePhotoViewerTests-Prefix.pch"; sourceTree = "<group>"; };
+		9E47CC5D1493450F00797691 /* SimplePhotoViewerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimplePhotoViewerTests.h; sourceTree = "<group>"; };
+		9E47CC5F1493450F00797691 /* SimplePhotoViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePhotoViewerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E47CC231493450D00797691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E47CC2B1493450D00797691 /* UIKit.framework in Frameworks */,
+				9E47CC2D1493450D00797691 /* Foundation.framework in Frameworks */,
+				9E47CC2F1493450D00797691 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E47CC4C1493450E00797691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E47CC511493450E00797691 /* UIKit.framework in Frameworks */,
+				9E47CC521493450E00797691 /* Foundation.framework in Frameworks */,
+				9E47CC531493450E00797691 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E47CC1B1493450D00797691 = {
+			isa = PBXGroup;
+			children = (
+				9E47CC301493450D00797691 /* SimplePhotoViewer */,
+				9E47CC561493450E00797691 /* SimplePhotoViewerTests */,
+				9E47CC291493450D00797691 /* Frameworks */,
+				9E47CC271493450D00797691 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E47CC271493450D00797691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E47CC261493450D00797691 /* SimplePhotoViewer.app */,
+				9E47CC501493450E00797691 /* SimplePhotoViewerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E47CC291493450D00797691 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E47CC2A1493450D00797691 /* UIKit.framework */,
+				9E47CC2C1493450D00797691 /* Foundation.framework */,
+				9E47CC2E1493450D00797691 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E47CC301493450D00797691 /* SimplePhotoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				9E47CC391493450D00797691 /* SimplePhotoViewerAppDelegate.h */,
+				9E47CC3A1493450D00797691 /* SimplePhotoViewerAppDelegate.m */,
+				9E47CC3C1493450E00797691 /* MainWindow.xib */,
+				9E47CC3F1493450E00797691 /* FirstViewController.h */,
+				9E47CC401493450E00797691 /* FirstViewController.m */,
+				9E47CC421493450E00797691 /* SecondViewController.h */,
+				9E47CC431493450E00797691 /* SecondViewController.m */,
+				9E47CC451493450E00797691 /* FirstView.xib */,
+				9E47CC481493450E00797691 /* SecondView.xib */,
+				9E47CC311493450D00797691 /* Supporting Files */,
+			);
+			path = SimplePhotoViewer;
+			sourceTree = "<group>";
+		};
+		9E47CC311493450D00797691 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E47CC321493450D00797691 /* SimplePhotoViewer-Info.plist */,
+				9E47CC331493450D00797691 /* InfoPlist.strings */,
+				9E47CC361493450D00797691 /* SimplePhotoViewer-Prefix.pch */,
+				9E47CC371493450D00797691 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E47CC561493450E00797691 /* SimplePhotoViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E47CC5D1493450F00797691 /* SimplePhotoViewerTests.h */,
+				9E47CC5F1493450F00797691 /* SimplePhotoViewerTests.m */,
+				9E47CC571493450E00797691 /* Supporting Files */,
+			);
+			path = SimplePhotoViewerTests;
+			sourceTree = "<group>";
+		};
+		9E47CC571493450E00797691 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E47CC581493450E00797691 /* SimplePhotoViewerTests-Info.plist */,
+				9E47CC591493450F00797691 /* InfoPlist.strings */,
+				9E47CC5C1493450F00797691 /* SimplePhotoViewerTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E47CC251493450D00797691 /* SimplePhotoViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E47CC631493450F00797691 /* Build configuration list for PBXNativeTarget "SimplePhotoViewer" */;
+			buildPhases = (
+				9E47CC221493450D00797691 /* Sources */,
+				9E47CC231493450D00797691 /* Frameworks */,
+				9E47CC241493450D00797691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimplePhotoViewer;
+			productName = SimplePhotoViewer;
+			productReference = 9E47CC261493450D00797691 /* SimplePhotoViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E47CC4F1493450E00797691 /* SimplePhotoViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E47CC661493450F00797691 /* Build configuration list for PBXNativeTarget "SimplePhotoViewerTests" */;
+			buildPhases = (
+				9E47CC4B1493450E00797691 /* Sources */,
+				9E47CC4C1493450E00797691 /* Frameworks */,
+				9E47CC4D1493450E00797691 /* Resources */,
+				9E47CC4E1493450E00797691 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E47CC551493450E00797691 /* PBXTargetDependency */,
+			);
+			name = SimplePhotoViewerTests;
+			productName = SimplePhotoViewerTests;
+			productReference = 9E47CC501493450E00797691 /* SimplePhotoViewerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E47CC1D1493450D00797691 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9E47CC201493450D00797691 /* Build configuration list for PBXProject "SimplePhotoViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E47CC1B1493450D00797691;
+			productRefGroup = 9E47CC271493450D00797691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E47CC251493450D00797691 /* SimplePhotoViewer */,
+				9E47CC4F1493450E00797691 /* SimplePhotoViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E47CC241493450D00797691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E47CC351493450D00797691 /* InfoPlist.strings in Resources */,
+				9E47CC3E1493450E00797691 /* MainWindow.xib in Resources */,
+				9E47CC471493450E00797691 /* FirstView.xib in Resources */,
+				9E47CC4A1493450E00797691 /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E47CC4D1493450E00797691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E47CC5B1493450F00797691 /* InfoPlist.strings in Resources */,
+				9E47CC5E1493450F00797691 /* SimplePhotoViewerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E47CC4E1493450E00797691 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E47CC221493450D00797691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E47CC381493450D00797691 /* main.m in Sources */,
+				9E47CC3B1493450D00797691 /* SimplePhotoViewerAppDelegate.m in Sources */,
+				9E47CC411493450E00797691 /* FirstViewController.m in Sources */,
+				9E47CC441493450E00797691 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E47CC4B1493450E00797691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E47CC601493450F00797691 /* SimplePhotoViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E47CC551493450E00797691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E47CC251493450D00797691 /* SimplePhotoViewer */;
+			targetProxy = 9E47CC541493450E00797691 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E47CC331493450D00797691 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E47CC341493450D00797691 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9E47CC3C1493450E00797691 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E47CC3D1493450E00797691 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		9E47CC451493450E00797691 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E47CC461493450E00797691 /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		9E47CC481493450E00797691 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E47CC491493450E00797691 /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+		9E47CC591493450F00797691 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E47CC5A1493450F00797691 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E47CC611493450F00797691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9E47CC621493450F00797691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		9E47CC641493450F00797691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimplePhotoViewer/SimplePhotoViewer-Prefix.pch";
+				INFOPLIST_FILE = "SimplePhotoViewer/SimplePhotoViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E47CC651493450F00797691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimplePhotoViewer/SimplePhotoViewer-Prefix.pch";
+				INFOPLIST_FILE = "SimplePhotoViewer/SimplePhotoViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9E47CC671493450F00797691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimplePhotoViewer.app/SimplePhotoViewer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimplePhotoViewerTests/SimplePhotoViewerTests-Prefix.pch";
+				INFOPLIST_FILE = "SimplePhotoViewerTests/SimplePhotoViewerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9E47CC681493450F00797691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimplePhotoViewer.app/SimplePhotoViewer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimplePhotoViewerTests/SimplePhotoViewerTests-Prefix.pch";
+				INFOPLIST_FILE = "SimplePhotoViewerTests/SimplePhotoViewerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E47CC201493450D00797691 /* Build configuration list for PBXProject "SimplePhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E47CC611493450F00797691 /* Debug */,
+				9E47CC621493450F00797691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E47CC631493450F00797691 /* Build configuration list for PBXNativeTarget "SimplePhotoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E47CC641493450F00797691 /* Debug */,
+				9E47CC651493450F00797691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9E47CC661493450F00797691 /* Build configuration list for PBXNativeTarget "SimplePhotoViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E47CC671493450F00797691 /* Debug */,
+				9E47CC681493450F00797691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E47CC1D1493450D00797691 /* Project object */;
+}
