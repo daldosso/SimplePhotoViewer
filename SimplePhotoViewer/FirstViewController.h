@@ -13,4 +13,6 @@
 
 }
 
+- (IBAction)showPhotos:(id)sender;
+
 @end
