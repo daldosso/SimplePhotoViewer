@@ -45,15 +45,7 @@
     // for example you can check the tag value
     
     NSLog(@"the tag value is: %d", [sender tag]);
-    
-    FirstViewController *first = [[FirstViewController alloc] init];
-//    [delegate.navController pushViewController:first animated:YES];
-   // [self.navigationController pushViewController:first animated:YES];
-    [first release];
-    
-    //[self.navigationController popViewControllerAnimated:YES];
-    
-    //[[TTNavigator navigatorForView:self.view] openURLAction:[TTURLAction actionWithURLPath:@"tt://home"]];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
