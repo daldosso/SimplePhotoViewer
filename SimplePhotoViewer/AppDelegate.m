@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Three20/Three20.h>
 
 @implementation AppDelegate
 
@@ -15,8 +16,30 @@
 
 @synthesize tabBarController=_tabBarController;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+-(void)fixDownloadError{
+    //http://stackoverflow.com/questions/3012137/three20-setting-thumbnail-photo-size
+    [[TTURLRequestQueue mainQueue] setMaxContentLength:0];
+    
+}
+
+-(void)injectTabControllerIntoNavController{
+    NSArray *controllers = self.tabBarController.viewControllers;
+    NSMutableArray *newControllers = [NSMutableArray array];
+    
+    for (UIViewController *plainController in controllers) {
+        UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:plainController];
+        navController.tabBarItem = plainController.tabBarItem;
+        [newControllers addObject:navController];
+    }
+
+    self.tabBarController.viewControllers = newControllers;
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    [self fixDownloadError];
+    
+    [self injectTabControllerIntoNavController];
+    
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
     self.window.rootViewController = self.tabBarController;
@@ -71,17 +94,17 @@
 }
 
 /*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-}
-*/
+ // Optional UITabBarControllerDelegate method.
+ - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+ {
+ }
+ */
 
 /*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
-{
-}
-*/
+ // Optional UITabBarControllerDelegate method.
+ - (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+ {
+ }
+ */
 
 @end

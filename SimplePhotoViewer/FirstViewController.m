@@ -50,38 +50,8 @@
 }
 
 - (IBAction)showPhotos:(id)sender {
-    
-    TTNavigator *navigator = [TTNavigator navigator];
-    navigator.supportsShakeToReload = YES;
-	navigator.persistenceMode = TTNavigatorPersistenceModeAll;
-    
-    //navigator.window = delegate.window;
-    navigator.window = self.view.window;        
-    
-    
-    //    if (![navigator restoreViewControllers])
-    //        navigator.window = self.view.window;
-    //    else 
-    //        TTNavigationController* navi = [[((Bathroom *)[navigator topViewController]) viewControllers] objectAtIndex:0];
-    
-    
-    //navigator.persistenceMode = TTNavigatorPersistenceModeAll;
-    //navigator.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    //[navigator.window makeKeyAndVisible];
-    
-    
-    //[delegate.navController pushViewController:navigator.window animated:YES];
-    
-    TTURLMap *map = navigator.URLMap;
-    //[map from:@"*" toViewController:[TTWebController class]];
-    //[map from:@"tt://home" toViewController:[FirstViewController class]];
-    [map from:@"tt://appPhotos" toSharedViewController:[PhotoViewController class]];
-    
-    //[navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://appPhotos"]];
-    
-    [[TTNavigator navigatorForView:self.view] openURLAction:[TTURLAction actionWithURLPath:@"tt://appPhotos"]];
-    
-
+    UIViewController *photosController = [[[PhotoViewController alloc]initWithNibName:nil bundle:nil]autorelease];
+    [self.navigationController pushViewController:photosController animated:YES];
 }
 
 @end
